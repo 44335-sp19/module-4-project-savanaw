@@ -38,7 +38,7 @@
       <input id='newsCB' type="checkbox" name="news" value="news">
         <label for="newsCB">
           I would like to subscribe to the newsletter.
-        </label></br>
+        </label><br>
       <button type="submit" name="SubmitButton" value="Submit">Submit</button>
       <button type="reset" name="ResetButton" value="Reset">Reset</button>
     </form>
@@ -46,17 +46,26 @@
 	<script>
 			//Step 5: Set an id on each option in the select tag. Name the id's state1, state2, and state3.
 			//Change the states that are used in the dropdown box to "Missouri", "Iowa", "Nebraska". Use the states abbreviation for the value property.
-
+                var state = document.getElementsByClassName("state");
+                /*state[0].id = "state1";
+                state[1].id = "state2";
+                state[2].id = "state3";
+                state[0].value = "MO";
+                state[1].value = "IA";
+                state[2].value = "NE";
+                state[0].innerHTML = "Missouri";
+                state[1].innerHTML = "Iowa";
+                state[2].innerHTML = "Nebraska";*/
+        	
 			
-			
-			
-			
-			
-			
-			
-	
 			//Comment out the code for Step 5. On the Contact.html page, set a class id called "state" on each option in the select tag. 
 			//Write the code to change all of the states to the word "Hello". 
+                
+                for(var i = 0; i < state.length; i++) {
+                    state[i].innerHTML = "Hello";
+                }
+                
+                
 
 			
 			

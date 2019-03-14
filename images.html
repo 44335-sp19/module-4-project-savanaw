@@ -28,31 +28,22 @@
 		<li> <img src="images/photo4.jpg" alt="Ocean Sunset" width="225" height="168">Ocean Sunset </li>
 		<li> <img src="images/photo5.jpg" alt="Waterfall on the Beach" width="225" height="168">Waterfall on the Beach </li>
 		<li> <img src="images/photo6.jpg" alt="Fog Moving In" width="225" height="168">Fog Moving In </li>
+      </ul>
    </main> 
-   <script>
-			//Step 1: Select all of the images on the page
-
-			
-			
-			
-			
-
-			//Step 2: Change the second and fourth pictures on the page to the "lighthouseisland.jpg" picture in the 
-			//images folder
-
-			
-			
-			
-			
-			
-			
-			
-   
-   
-   </script>
    <footer>Copyright &copy; 2015
    </footer>
   </div> <!-- end of wrapper -->
+      <script>
+			//Step 1: Select all of the images on the page
+                var images = document.images;
+			
+			
+			//Step 2: Change the second and fourth pictures on the page to the "lighthouseisland.jpg" picture in the 
+			//images folder
+                images[1].src = "./images/lighthouseisland.jpg";
+                images[3].src = "./images/lighthouseisland.jpg";
+
+   </script>
 </body>
 </html>
 
